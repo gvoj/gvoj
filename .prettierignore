@@ -1,0 +1,8 @@
+.github
+.idea
+.vscode
+.next
+public/
+*-lock.*
+*.old
+*.ignore

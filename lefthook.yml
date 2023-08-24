@@ -1,0 +1,9 @@
+pre-push:
+    parallel: true
+
+pre-commit:
+    commands:
+        next-linter:
+            run: pnpm lint
+        prettier:
+            run: pnpm prettier --write --ignore-unknown {staged_files} && git add {staged_files}
